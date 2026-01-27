@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Roboost Solutions provides IoT, AI, Embedded Systems, and Automation solutions for industries.">
+<meta name="keywords" content="IoT company, AI automation, Embedded systems, Industrial IoT India, Roboost Solutions">
+<meta name="author" content="Roboost Solutions">
+<title>Roboost Solutions | Smart IoT & AI Automation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;background:#0f172a;color:#e2e8f0;overflow-x:hidden}
+
+/* PARTICLES BACKGROUND */
+#particles-js{position:fixed;width:100%;height:100%;z-index:-1;background:#0f172a}
+
+/* HERO */
+header{
+height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;
+text-align:center;padding:20px;color:white
+}
+header h1{font-size:52px;max-width:900px;animation:slideDown 1.5s ease}
+header p{margin-top:20px;max-width:800px;font-size:18px;color:#cbd5e1}
+
+.btn{
+margin-top:30px;padding:14px 30px;background:linear-gradient(45deg,#00c6ff,#0072ff);
+border-radius:30px;color:white;text-decoration:none;font-weight:600;
+transition:.4s;box-shadow:0 0 15px rgba(0,114,255,.6)
+}
+.btn:hover{transform:translateY(-5px) scale(1.05);box-shadow:0 0 25px rgba(0,114,255,1)}
+
+/* SECTIONS */
+section{padding:90px 20px;max-width:1200px;margin:auto}
+h2{text-align:center;margin-bottom:50px;font-size:32px;color:#38bdf8}
+
+/* SERVICES SECTION */
+.services-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.service-card{
+background:linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+border:1px solid rgba(56,189,248,0.2);
+padding:30px;
+border-radius:18px;
+text-align:center;
+transition:0.4s ease;
+position:relative;
+overflow:hidden;
+transform:translateY(40px);
+opacity:0;
+}
+
+.service-card.show{transform:translateY(0);opacity:1}
+
+.service-card::before{
+content:"";
+position:absolute;
+top:-50%;
+left:-50%;
+width:200%;
+height:200%;
+background:radial-gradient(circle at center, rgba(56,189,248,0.15), transparent 70%);
+transform:rotate(25deg);
+transition:0.6s;
+}
+
+.service-card:hover::before{top:-30%;left:-30%}
+.service-card:hover{
+transform:translateY(-12px) scale(1.03);
+box-shadow:0 0 25px rgba(56,189,248,0.35);
+border-color:#38bdf8;
+}
+
+.icon{
+font-size:40px;
+margin-bottom:15px;
+animation:floatIcon 3s ease-in-out infinite;
+}
+
+@keyframes floatIcon{
+0%{transform:translateY(0)}
+50%{transform:translateY(-8px)}
+100%{transform:translateY(0)}
+}
+
+/* COUNTERS */
+.counter-box{text-align:center}
+.counter{font-size:42px;color:#38bdf8;font-weight:700}
+
+/* CONTACT */
+form{max-width:600px;margin:auto;display:flex;flex-direction:column;gap:15px}
+input,textarea{padding:12px;border-radius:8px;border:none;font-size:14px}
+button{
+background:linear-gradient(45deg,#00c6ff,#0072ff);
+color:white;padding:14px;border:none;border-radius:30px;font-weight:bold;
+cursor:pointer;transition:.3s
+}
+button:hover{transform:scale(1.05)}
+
+footer{background:#020617;text-align:center;padding:40px 20px;color:#94a3b8}
+@keyframes slideDown{from{transform:translateY(-50px);opacity:0}to{transform:translateY(0);opacity:1}}
+</style>
+</head>
+
+<body>
+<div id="particles-js"></div>
+
+<header>
+<h1>Powering the Future with Smart IoT, AI & Automation</h1>
+<p>We design intelligent connected systems, advanced electronics, and scalable cloud platforms that transform industries through real-time data and automation.</p>
+<a href="#services" class="btn">Explore Our Solutions</a>
+</header>
+
+<section id="services">
+<h2>Our Services</h2>
+<div class="services-grid">
+
+<div class="service-card"><div class="icon">🌐</div><h3>Industrial IoT Systems</h3><p>Smart connected monitoring and control devices.</p></div>
+<div class="service-card"><div class="icon">🧠</div><h3>AI & Predictive Analytics</h3><p>Anomaly detection and intelligent insights.</p></div>
+<div class="service-card"><div class="icon">⚙️</div><h3>Automation & Embedded Systems</h3><p>Sensor-driven control and embedded engineering.</p></div>
+<div class="service-card"><div class="icon">🔬</div><h3>Advanced Electronic Solutions</h3><p>Inspection, sensing, testing and data acquisition.</p></div>
+<div class="service-card"><div class="icon">☁️</div><h3>Web & Cloud Platforms</h3><p>Dashboards, APIs, and scalable IoT cloud systems.</p></div>
+<div class="service-card"><div class="icon">🛠️</div><h3>Custom Engineering Projects</h3><p>Tailor-made IoT and electronic systems built to solve unique industrial challenges.</p></div>
+
+</div>
+</section>
+
+<section id="careers">
+<h2>Careers at Roboost</h2>
+<p style="text-align:center;max-width:800px;margin:auto">
+We are always looking for passionate engineers, developers, and innovators in IoT, AI, Embedded Systems, and Web Technologies.
+</p>
+<div style="text-align:center;margin-top:25px;">
+<a href="#contact" class="btn">Apply Now</a>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<form action="https://formsubmit.co/memejire@mailgolem.com" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" rows="5" placeholder="Your Message"></textarea>
+<button type="submit">Send Message</button>
+</form>
+</section>
+
+<footer>
+© 2026 Roboost Solutions | Smart IoT & AI Automation
+</footer>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+particlesJS("particles-js",{particles:{number:{value:60},size:{value:3},move:{speed:1},line_linked:{enable:true,opacity:0.2}},interactivity:{events:{onhover:{enable:true,mode:"repulse"}}}});
+const cards=document.querySelectorAll('.service-card');
+window.addEventListener('scroll',()=>{
+const trigger=window.innerHeight*0.85;
+cards.forEach(card=>{if(card.getBoundingClientRect().top<trigger){card.classList.add('show')}})
+});
+</script>
+
+</body>
+</html>
