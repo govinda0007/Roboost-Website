@@ -27,23 +27,67 @@ body{font-family:'Poppins',sans-serif;background:#0f172a;color:#e2e8f0;overflow-
 /* Links */
 a{color:#38bdf8;text-decoration:none}
 a:hover{color:#00c6ff}
-.logo {
-    width: 140px;
-    margin-bottom: 20px;
-}
 
-
-/* Background Particles */
+/* Particles */
 #particles-js{position:fixed;width:100%;height:100%;z-index:-1;background:#0f172a}
 
-/* Hero */
-header{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px}
-header h1{font-size:50px;max-width:900px;animation:fadeDown 1.2s ease}
-header p{margin-top:20px;max-width:800px;color:#cbd5e1;font-size:18px}
+/* HERO SECTION */
+header{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:40px 20px;
+}
 
-.btn{margin-top:30px;padding:14px 30px;background:linear-gradient(45deg,#00c6ff,#0072ff);border-radius:30px;color:white;font-weight:600;transition:.3s;box-shadow:0 0 15px rgba(0,114,255,.5)}
+.hero-box{
+text-align:center;
+max-width:900px;
+padding:50px 40px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(12px);
+border-radius:22px;
+box-shadow:0 0 50px rgba(0,0,0,0.35);
+animation:fadeDown 1.2s ease;
+}
+
+.logo{
+width:120px;
+margin-bottom:25px;
+}
+
+.hero-box h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero-box p{
+color:#cbd5e1;
+font-size:18px;
+margin-bottom:35px;
+line-height:1.6;
+}
+
+/* Buttons */
+.btn-group{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:14px 30px;
+background:linear-gradient(45deg,#00c6ff,#0072ff);
+border-radius:30px;
+color:white;
+font-weight:600;
+transition:.3s;
+box-shadow:0 0 15px rgba(0,114,255,.5);
+}
 .btn:hover{transform:translateY(-4px) scale(1.05)}
 
+/* Sections */
 section{padding:80px 20px;max-width:1200px;margin:auto}
 h2{text-align:center;margin-bottom:50px;font-size:32px;color:#38bdf8}
 
@@ -70,13 +114,21 @@ footer{background:#020617;text-align:center;padding:35px 20px;color:#94a3b8}
 <div id="particles-js"></div>
 
 <header>
+  <div class="hero-box">
     <img src="logo.png" alt="Roboost Solutions Logo" class="logo">
 
     <h1>Industrial IoT, AI & Automation Solutions for Smart Industries</h1>
-    <p>Roboost Solutions designs intelligent connected systems, embedded electronics, and automation platforms that transform industries through real-time data and smart control.</p>
 
-    <a href="#services" class="btn">Explore Our Services</a>
-    <a href="Roboost-Company-Profile.pdf" class="btn" download>Download Company Profile</a>
+    <p>
+      Roboost Solutions designs intelligent connected systems, embedded electronics, 
+      and automation platforms that transform industries through real-time data and smart control.
+    </p>
+
+    <div class="btn-group">
+      <a href="#services" class="btn">Explore Our Services</a>
+      <a href="Roboost-Company-Profile.pdf" class="btn" download>Download Company Profile</a>
+    </div>
+  </div>
 </header>
 
 <section id="services">
