@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://govinda0007.github.io/Roboost-Website/sitemap.xml
