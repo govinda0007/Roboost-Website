@@ -20,83 +20,57 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="favicon.png">
 
-
 <style>
 *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
 body{font-family:'Poppins',sans-serif;background:#0f172a;color:#e2e8f0;overflow-x:hidden}
 
-/* Links */
 a{color:#38bdf8;text-decoration:none}
 a:hover{color:#00c6ff}
 
-/* Particles */
 #particles-js{position:fixed;width:100%;height:100%;z-index:-1;background:#0f172a}
 
-/* HERO SECTION */
-header{
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-padding:40px 20px;
-}
-
+/* HERO */
+header{min-height:100vh;display:flex;justify-content:center;align-items:center;padding:40px 20px}
 .hero-box{
-text-align:center;
-max-width:900px;
-padding:50px 40px;
-background:rgba(255,255,255,0.05);
-backdrop-filter:blur(12px);
-border-radius:22px;
-box-shadow:0 0 50px rgba(0,0,0,0.35);
-animation:fadeDown 1.2s ease;
+text-align:center;max-width:900px;padding:50px 40px;
+background:rgba(255,255,255,0.05);backdrop-filter:blur(12px);
+border-radius:22px;box-shadow:0 0 50px rgba(0,0,0,0.35);
+animation:fadeDown 1.2s ease;position:relative;overflow:hidden;
 }
-
-.logo{
-width:120px;
-margin-bottom:25px;
+.hero-box::before{
+content:"";position:absolute;width:300px;height:300px;
+background:radial-gradient(circle,#38bdf855,transparent 70%);
+top:-80px;right:-80px;z-index:-1;filter:blur(40px);
 }
+.logo{width:120px;margin-bottom:25px}
+.hero-box h1{font-size:48px;margin-bottom:20px}
+.hero-box p{color:#cbd5e1;font-size:18px;margin-bottom:35px;line-height:1.6}
 
-.hero-box h1{
-font-size:48px;
-margin-bottom:20px;
-}
-
-.hero-box p{
-color:#cbd5e1;
-font-size:18px;
-margin-bottom:35px;
-line-height:1.6;
-}
-
-/* Buttons */
-.btn-group{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-}
-
+.btn-group{display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
 .btn{
-padding:14px 30px;
-background:linear-gradient(45deg,#00c6ff,#0072ff);
-border-radius:30px;
-color:white;
-font-weight:600;
-transition:.3s;
-box-shadow:0 0 15px rgba(0,114,255,.5);
+padding:14px 30px;background:linear-gradient(45deg,#00c6ff,#0072ff);
+border-radius:30px;color:white;font-weight:600;transition:.3s;
+box-shadow:0 0 15px rgba(0,114,255,.5);display:inline-block;
 }
 .btn:hover{transform:translateY(-4px) scale(1.05)}
 
-/* Sections */
 section{padding:80px 20px;max-width:1200px;margin:auto}
 h2{text-align:center;margin-bottom:50px;font-size:32px;color:#38bdf8}
 
+/* Stats */
+.stats{padding:60px 20px;text-align:center}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:30px;max-width:900px;margin:auto}
+.stats h3{font-size:36px;color:#38bdf8}
+.stats p{color:#94a3b8;margin-top:8px}
+
 /* Services */
 .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
-.service-card{background:rgba(255,255,255,0.05);padding:25px;border-radius:16px;text-align:center;transition:.4s;transform:translateY(40px);opacity:0}
+.service-card{
+background:rgba(255,255,255,0.05);padding:25px;border-radius:16px;text-align:center;
+transition:transform .4s ease, box-shadow .4s ease;transform:translateY(40px);opacity:0
+}
 .service-card.show{transform:translateY(0);opacity:1}
-.service-card:hover{transform:translateY(-10px);box-shadow:0 0 20px rgba(56,189,248,.4)}
+.service-card:hover{transform:translateY(-6px);box-shadow:0 0 20px rgba(56,189,248,.4)}
 .icon{font-size:38px;margin-bottom:15px}
 
 /* Form */
@@ -106,8 +80,21 @@ button{background:linear-gradient(45deg,#00c6ff,#0072ff);color:white;padding:14p
 button:hover{transform:scale(1.05)}
 
 footer{background:#020617;text-align:center;padding:35px 20px;color:#94a3b8}
-
 @keyframes fadeDown{from{transform:translateY(-40px);opacity:0}to{transform:translateY(0);opacity:1}}
+
+/* MOBILE */
+@media (max-width:768px){
+.hero-box{padding:35px 20px}
+.hero-box h1{font-size:28px;line-height:1.3}
+.hero-box p{font-size:15px}
+.btn-group{flex-direction:column;gap:12px}
+.btn{width:100%;text-align:center;font-size:15px}
+h2{font-size:24px}
+section{padding:60px 18px}
+.service-card{padding:20px}
+.icon{font-size:32px}
+footer{font-size:14px;padding:25px 15px}
+}
 </style>
 </head>
 
@@ -117,20 +104,23 @@ footer{background:#020617;text-align:center;padding:35px 20px;color:#94a3b8}
 <header>
   <div class="hero-box">
     <img src="logo.png" alt="Roboost Solutions Logo" class="logo">
-
     <h1>Industrial IoT, AI & Automation Solutions for Smart Industries</h1>
-
-    <p>
-      Roboost Solutions designs intelligent connected systems, embedded electronics, 
-      and automation platforms that transform industries through real-time data and smart control.
-    </p>
-
+    <p>Roboost Solutions designs intelligent connected systems, embedded electronics, and automation platforms that transform industries through real-time data and smart control.</p>
     <div class="btn-group">
       <a href="#services" class="btn">Explore Our Services</a>
       <a href="Roboost-Company-Profile.pdf" class="btn" download>Download Company Profile</a>
     </div>
   </div>
 </header>
+
+<section class="stats">
+  <div class="stats-grid">
+    <div><h3 class="count" data-target="25">0</h3><p>Projects Completed</p></div>
+    <div><h3 class="count" data-target="10">0</h3><p>Industries Served</p></div>
+    <div><h3 class="count" data-target="15">0</h3><p>Technologies Used</p></div>
+    <div><h3 class="count" data-target="24">0</h3><p>Support Availability</p></div>
+  </div>
+</section>
 
 <section id="services">
 <h2>Our Services</h2>
@@ -149,7 +139,6 @@ footer{background:#020617;text-align:center;padding:35px 20px;color:#94a3b8}
 <p style="text-align:center;max-width:800px;margin:auto">We welcome passionate engineers and developers in IoT, AI, embedded systems, and automation technologies.</p>
 <div style="text-align:center;margin-top:25px;">
 <a href="/Roboost-Website/careers.html" class="btn">Apply Now</a>
-
 </div>
 </section>
 
@@ -173,6 +162,8 @@ footer{background:#020617;text-align:center;padding:35px 20px;color:#94a3b8}
 particlesJS("particles-js",{particles:{number:{value:60},size:{value:3},move:{speed:1},line_linked:{enable:true,opacity:0.2}},interactivity:{events:{onhover:{enable:true,mode:"repulse"}}}});
 const cards=document.querySelectorAll('.service-card');
 window.addEventListener('scroll',()=>{const trigger=window.innerHeight*0.85;cards.forEach(card=>{if(card.getBoundingClientRect().top<trigger){card.classList.add('show')}})});
+const counters=document.querySelectorAll('.count');
+counters.forEach(counter=>{const update=()=>{const target=+counter.getAttribute('data-target');const count=+counter.innerText;const inc=target/80;if(count<target){counter.innerText=Math.ceil(count+inc);setTimeout(update,30);}else{counter.innerText=target;}};update();});
 </script>
 
 </body>
