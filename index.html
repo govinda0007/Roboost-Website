@@ -18,80 +18,12 @@
 <meta name="theme-color" content="#0f172a">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" href="favicon.png">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
-body{font-family:'Poppins',sans-serif;background:#0f172a;color:#e2e8f0;overflow-x:hidden}
-a{color:#38bdf8;text-decoration:none}
-a:hover{color:#00c6ff}
-#particles-js{position:fixed;width:100%;height:100%;z-index:-1;background:#0f172a}
 
-/* HERO */
-header{min-height:100vh;display:flex;justify-content:center;align-items:center;padding:40px 20px}
-.hero-box{text-align:center;max-width:900px;padding:50px 40px;background:rgba(255,255,255,0.05);backdrop-filter:blur(12px);border-radius:22px;box-shadow:0 0 50px rgba(0,0,0,0.35);animation:fadeDown 1.2s ease;position:relative;overflow:hidden;}
-.hero-box::before{content:"";position:absolute;width:300px;height:300px;background:radial-gradient(circle,#38bdf855,transparent 70%);top:-80px;right:-80px;z-index:-1;filter:blur(40px);}
-.logo{width:120px;margin-bottom:25px}
-.hero-box h1{font-size:48px;margin-bottom:20px}
-.hero-box p{color:#cbd5e1;font-size:18px;margin-bottom:35px;line-height:1.6}
-.btn-group{display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
-.btn{padding:14px 30px;background:linear-gradient(45deg,#00c6ff,#0072ff);border-radius:30px;color:white;font-weight:600;transition:.3s;box-shadow:0 0 15px rgba(0,114,255,.5);display:inline-block;}
-.btn:hover{transform:translateY(-4px) scale(1.05)}
 
-section{padding:80px 20px;max-width:1200px;margin:auto}
-h2{text-align:center;margin-bottom:50px;font-size:32px;color:#38bdf8}
-
-/* Stats */
-.stats{padding:60px 20px;text-align:center}
-.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:30px;max-width:900px;margin:auto}
-.stats h3{font-size:36px;color:#38bdf8}
-.stats p{color:#94a3b8;margin-top:8px}
-
-/* Services */
-.services-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:30px;}
-.service-card{background:rgba(255,255,255,0.05);padding:25px;border-radius:16px;text-align:center;transition:transform .4s ease, box-shadow .4s ease;transform:translateY(40px);opacity:0;}
-.service-card.show{transform:translateY(0);opacity:1}
-.service-card:hover{transform:translateY(-6px);box-shadow:0 0 20px rgba(56,189,248,.4)}
-.icon{font-size:38px;margin-bottom:15px}
-
-/* Careers */
-#careers p{color:#cbd5e1}
-
-/* ===== CONTACT LIGHT PREMIUM ===== */
-#contact{
-padding:100px 20px;
-position:relative;
-z-index:1; /* keeps content above particles */
-}
-
-.contact-wrapper{max-width:650px;margin:auto}
-.contact-card{background:rgba(255,255,255,0.08);backdrop-filter:blur(12px);padding:45px;border-radius:20px;box-shadow:0 10px 40px rgba(0,0,0,0.45);border:1px solid rgba(255,255,255,0.08);transition:transform .4s ease, box-shadow .4s ease;}
-.contact-card:hover{transform:translateY(-6px);box-shadow:0 15px 50px rgba(0,0,0,0.6);}
-.contact-card form{display:flex;flex-direction:column;gap:18px}
-.contact-card input,.contact-card textarea{padding:15px 16px;border-radius:10px;border:1px solid rgba(255,255,255,0.15);background:rgba(15,23,42,0.85);color:white;font-size:14px;transition:.3s;}
-.contact-card input:focus,.contact-card textarea:focus{outline:none;border-color:#38bdf8;box-shadow:0 0 12px rgba(56,189,248,0.5);background:#0f172a;}
-.contact-card button{padding:15px;border:none;border-radius:30px;font-weight:600;background:linear-gradient(45deg,#38bdf8,#0ea5e9);color:white;cursor:pointer;transition:.3s;}
-.contact-card button:hover{transform:translateY(-3px);box-shadow:0 0 18px rgba(56,189,248,.6);}
-
-footer{background:#020617;text-align:center;padding:35px 20px;color:#94a3b8}
-@keyframes fadeDown{from{transform:translateY(-40px);opacity:0}to{transform:translateY(0);opacity:1}}
-
-/* Responsive */
-@media (max-width:1024px){.services-grid{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:768px){
-.hero-box{padding:35px 20px}
-.hero-box h1{font-size:28px;line-height:1.3}
-.hero-box p{font-size:15px}
-.btn-group{flex-direction:column;gap:12px}
-.btn{width:100%;text-align:center;font-size:15px}
-h2{font-size:24px}
-section{padding:60px 18px}
-.service-card{padding:20px}
-.icon{font-size:32px}
-footer{font-size:14px;padding:25px 15px}
-.services-grid{grid-template-columns:1fr}
-}
-</style>
+<!-- MAIN CSS -->
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -99,7 +31,7 @@ footer{font-size:14px;padding:25px 15px}
 
 <header>
   <div class="hero-box">
-    <img src="logo.png" alt="Roboost Solutions Logo" class="logo">
+    <img src="/assets/logo.png.png" alt="Roboost Solutions Logo" class="logo">
     <h1>Industrial IoT, AI & Automation Solutions for Smart Industries</h1>
     <p>Roboost Solutions designs intelligent connected systems, embedded electronics, and automation platforms that transform industries through real-time data and smart control.</p>
     <div class="btn-group">
@@ -134,7 +66,7 @@ footer{font-size:14px;padding:25px 15px}
 <h2>Careers at Roboost</h2>
 <p style="text-align:center;max-width:800px;margin:auto">We welcome passionate engineers and developers in IoT, AI, embedded systems, and automation technologies.</p>
 <div style="text-align:center;margin-top:25px;">
-<a href="/Roboost-Website/careers.html" class="btn">Apply Now</a>
+<a href="careers.html" class="btn">Apply Now</a>
 </div>
 </section>
 
@@ -158,13 +90,6 @@ footer{font-size:14px;padding:25px 15px}
 </footer>
 
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script>
-particlesJS("particles-js",{particles:{number:{value:60},size:{value:3},move:{speed:1},line_linked:{enable:true,opacity:0.2}},interactivity:{events:{onhover:{enable:true,mode:"repulse"}}}});
-const cards=document.querySelectorAll('.service-card');
-window.addEventListener('scroll',()=>{const trigger=window.innerHeight*0.85;cards.forEach(card=>{if(card.getBoundingClientRect().top<trigger){card.classList.add('show')}})});
-const counters=document.querySelectorAll('.count');
-counters.forEach(counter=>{const update=()=>{const target=+counter.getAttribute('data-target');const count=+counter.innerText;const inc=target/80;if(count<target){counter.innerText=Math.ceil(count+inc);setTimeout(update,30);}else{counter.innerText=target;}};update();});
-</script>
-
+<script src="js/main.js"></script>
 </body>
 </html>
