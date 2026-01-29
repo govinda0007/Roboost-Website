@@ -7,89 +7,11 @@
 <title>Careers | Roboost Solutions</title>
 <link rel="icon" type="image/png" href="favicon.png">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/careers.css">
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Poppins',sans-serif;background:#0f172a;color:#e2e8f0;overflow-x:hidden}
+<link rel="icon" href="assets/favicon.png">
+<link rel="shortcut icon" href="assets/favicon.png">
 
-/* PARTICLE BACKGROUND */
-#particles-js{
-position:fixed;
-width:100%;
-height:100%;
-z-index:-1;
-background:#0f172a;
-}
-
-/* HEADER */
-.header{
-text-align:center;
-padding:80px 20px 30px;
-animation:fadeIn 1s ease;
-}
-.header h1{font-size:42px;margin-bottom:10px}
-.header p{color:#94a3b8}
-
-/* FORM CARD */
-.form-container{
-max-width:750px;
-margin:40px auto 80px;
-background:rgba(255,255,255,0.05);
-backdrop-filter:blur(10px);
-padding:40px;
-border-radius:18px;
-box-shadow:0 0 40px rgba(0,0,0,0.4);
-animation:slideUp 1s ease;
-}
-
-form{display:flex;flex-direction:column;gap:18px}
-
-input,select,textarea{
-padding:14px 16px;
-border-radius:8px;
-border:none;
-background:#1e293b;
-color:white;
-font-size:14px;
-transition:.3s
-}
-
-input:focus,select:focus,textarea:focus{
-outline:2px solid #38bdf8;
-}
-
-label{font-size:14px;color:#cbd5e1;margin-bottom:5px}
-
-button{
-margin-top:10px;
-padding:14px;
-background:linear-gradient(45deg,#00c6ff,#0072ff);
-border:none;
-border-radius:30px;
-color:white;
-font-weight:600;
-cursor:pointer;
-transition:.3s
-}
-button:hover{transform:scale(1.05)}
-
-footer{
-text-align:center;
-padding:40px 20px;
-color:#64748b;
-border-top:1px solid #1e293b;
-}
-
-/* ANIMATIONS */
-@keyframes fadeIn{
-from{opacity:0;transform:translateY(-20px)}
-to{opacity:1;transform:translateY(0)}
-}
-@keyframes slideUp{
-from{opacity:0;transform:translateY(40px)}
-to{opacity:1;transform:translateY(0)}
-}
-</style>
 </head>
 
 <body>
@@ -143,10 +65,90 @@ to{opacity:1;transform:translateY(0)}
 </form>
 </div>
 
-<footer>
-© 2026 Roboost Solutions | Careers
-</footer>
+<footer class="main-footer">
+  <div class="footer-container">
 
+    <!-- COMPANY + ADDRESSES -->
+    <div class="footer-col company-info">
+      <div class="footer-brand">
+        <img src="../assets/favicon.png" alt="Roboost Logo">
+        <h3>Roboost Solutions</h3>
+      </div>
+
+      <p class="footer-address">
+        <strong>Corporate Office:</strong><br>
+        2nd Floor, Tech Park Tower,<br>
+        Delhi Road, Rohtak,<br>
+        Haryana, India – 124001
+      </p>
+
+      <p class="footer-address">
+        <strong>Development Center:</strong><br>
+        5th Floor, Innovation Hub,<br>
+        Sector 21C, Faridabad,<br>
+        Haryana, India – 121001
+      </p>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="footer-col">
+      <h4>Our Services</h4>
+      <ul>
+        <li>Industrial IoT Systems</li>
+        <li>AI & Predictive Analytics</li>
+        <li>Embedded & Automation</li>
+        <li>Electronic Solutions</li>
+        <li>Cloud & Web Platforms</li>
+      </ul>
+    </div>
+
+    <!-- TECHNOLOGIES -->
+    <div class="footer-col">
+      <h4>Technologies</h4>
+      <ul>
+        <li>ESP32 / Microcontrollers</li>
+        <li>Machine Learning</li>
+        <li>MQTT / WebSockets</li>
+        <li>Cloud IoT Platforms</li>
+        <li>Custom PCB Design</li>
+      </ul>
+    </div>
+    <!-- INDUSTRIES -->
+    <div class="footer-col">
+      <h4>Industries We Serve</h4>
+      <ul>
+        <li>Manufacturing</li>
+        <li>Energy & Utilities</li>
+        <li>Smart Infrastructure</li>
+        <li>Agriculture Technology</li>
+        <li>Industrial Automation</li>
+      </ul>
+    </div>
+
+
+    <!-- QUICK LINKS -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#services">Services</a></li>
+        <li><a href="../index.html#careers">Careers</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM BAR -->
+  <div class="footer-bottom">
+    <p>© 2026 Roboost Solutions. All Rights Reserved.</p>
+    <div class="social-links">
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+      <a href="#">YouTube</a>
+    </div>
+  </div>
+</footer>
 <!-- PARTICLES SCRIPT -->
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script>
