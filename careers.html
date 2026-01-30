@@ -11,20 +11,24 @@
 
 <link rel="icon" href="assets/favicon.png">
 <link rel="shortcut icon" href="assets/favicon.png">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 </head>
 
 <body>
 
 <div id="particles-js"></div>
+<a href="index.html" class="top-back">← Back to Home</a>
 
-<div class="header">
+<div class="header" data-aos="fade-up">
   <h1>Join Roboost Solutions</h1>
   <p>Work on real-world innovation in IoT, AI, and Embedded Systems</p>
 </div>
 
 <div class="form-container">
-<form action="https://formsubmit.co/goko062003@gmail.com" method="POST" enctype="multipart/form-data">
+<form id="contactForm" action="https://formsubmit.co/goko062003@gmail.com" method="POST" enctype="multipart/form-data" data-aos="fade-up">
+
+
 
 <input type="hidden" name="_captcha" value="false">
 <input type="hidden" name="_subject" value="New Career Application - Roboost">
@@ -65,7 +69,7 @@
 </form>
 </div>
 
-<footer class="main-footer">
+<footer class="main-footer" data-aos="fade-in">
   <div class="footer-container">
 
     <!-- COMPANY + ADDRESSES -->
@@ -143,9 +147,9 @@
   <div class="footer-bottom">
     <p>© 2026 Roboost Solutions. All Rights Reserved.</p>
     <div class="social-links">
-      <a href="#">LinkedIn</a>
-      <a href="#">GitHub</a>
-      <a href="#">YouTube</a>
+      <a href="https://www.linkedin.com/in/govinda-015912258/">LinkedIn</a>
+      <a href="https://github.com/govinda0007">GitHub</a>
+      <a href="https://www.instagram.com/govinda_0007/">YouTube</a>
     </div>
   </div>
 </footer>
@@ -162,6 +166,32 @@ particlesJS("particles-js",{
   interactivity:{events:{onhover:{enable:true,mode:"repulse"}}}
 });
 </script>
+<script>
+function redirectAfterSubmit(formId){
+  const form = document.getElementById(formId);
+  if(!form) return;
+
+  form.addEventListener("submit", function(){
+    setTimeout(function(){
+      window.location.href = "html/success.html";
+    }, 800); // small delay so form can send
+  });
+}
+
+redirectAfterSubmit("contactForm");
+redirectAfterSubmit("careerForm");
+</script>
+<!-- Animations -->
+ <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+  duration: 900,
+  once: false,
+  offset: 80,
+  easing: "ease-out-cubic"
+});
+</script>
+
 
 </body>
 </html>

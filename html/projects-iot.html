@@ -9,7 +9,8 @@
 <link rel="stylesheet" href="../css/projects.css">
 <link rel="icon" href="../assets/favicon.png">
 <link rel="shortcut icon" href="../assets/favicon.png">
-
+<!-- Animations -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 <!-- PARTICLES BACKGROUND STYLE -->
 <style>
@@ -30,45 +31,100 @@ background:#0f172a;
 
 <a href="../index.html" class="top-back">← Back to Home</a>
 
-<div class="projects-header">
+<div class="projects-header" data-aos="fade-up">
   <h1>Industrial IoT Projects</h1>
   <p>Smart connected solutions for industrial monitoring and automation.</p>
+</div>
+<div class="project-description" data-aos="fade-up">
+  <p>
+    This Industrial Energy Monitoring System enables real-time tracking of voltage, current, power, and energy consumption of industrial equipment. 
+    The system uses ESP32 with a PZEM-004T energy module to collect electrical parameters and transmit data securely to a cloud dashboard. 
+    It helps industries analyze power usage, detect overload conditions, and reduce energy wastage through intelligent monitoring.
+  </p>
 </div>
 
 <!-- PROJECTS GRID -->
 <div class="project-grid">
-  <div class="project-item"><h3>Smart Factory Monitoring</h3><span>ESP32 • MQTT • Cloud Dashboard</span></div>
-  <div class="project-item"><h3>Energy Usage Analytics</h3><span>IoT Sensors • Data Visualization</span></div>
-  <div class="project-item"><h3>Remote Equipment Health</h3><span>Predictive Maintenance • Edge AI</span></div>
+
+  <div class="project-item">
+    <h3>Real-Time Power Consumption Monitoring</h3>
+    <span>ESP32 • PZEM-004T • IoT Cloud</span>
+  </div>
+
+  <div class="project-item">
+    <h3>Energy Usage Data Logging</h3>
+    <span>MQTT • Web Dashboard • Database</span>
+  </div>
+
+  <div class="project-item">
+    <h3>Overload & Voltage Protection Alerts</h3>
+    <span>Smart Alerts • Threshold Detection</span>
+  </div>
+
+  <div class="project-item">
+    <h3>Live Industrial Energy Dashboard</h3>
+    <span>Real-Time Graphs • Remote Monitoring</span>
+  </div>
+
 </div>
 
+
 <!-- IMAGE SECTION -->
-<div class="media-section">
+<div class="media-section" data-aos="fade-up">
   <h2>Project Gallery</h2>
   <div class="media-grid">
-    <img src="../assets/iot1.jpg" alt="">
-    <img src="../assets/iot2.jpg" alt="">
+    <img src="../assets/iot-1.png" alt="">
+    <img src="../assets/iot-2.jpg" alt="">
   </div>
 </div>
 
 <!-- VIDEO SECTION -->
-<div class="media-section">
+<div class="media-section" data-aos="fade-up">
   <h2>Project Videos</h2>
   <div class="video-grid">
-    <video controls src="../assets/iot-video1.mp4"></video>
-    <video controls src="../assets/iot-video2.mp4"></video>
+    <video controls src="../assets/iot-1.mp4"></video>
+    <video controls src="../assets/iot-2.mp4"></video>
+  </div>
+</div>
+<!-- COMPLETED PROJECTS LIST -->
+<div class="completed-section" data-aos="fade-up">
+  <h2>Completed Industrial IoT Projects</h2>
+
+  <div class="completed-grid">
+
+    <div class="completed-item">
+      <h4>Smart Factory Monitoring System</h4>
+      <p>Real-time machine temperature, vibration and performance monitoring using IoT sensors and cloud dashboards.</p>
+    </div>
+
+    <div class="completed-item">
+      <h4>Industrial Energy Monitoring</h4>
+      <p>Live voltage, current, and power analytics for reducing energy wastage and preventing overloads.</p>
+    </div>
+
+    <div class="completed-item">
+      <h4>Cold Storage Temperature Tracking</h4>
+      <p>Continuous environmental monitoring with automated alerts for temperature-sensitive storage facilities.</p>
+    </div>
+
+    <div class="completed-item">
+      <h4>Water Tank Level Automation</h4>
+      <p>Ultrasonic-based level monitoring with pump automation and remote cloud supervision.</p>
+    </div>
+
   </div>
 </div>
 
+
 <!-- CLEAN CTA SECTION (No shapes) -->
-<div class="cta-section">
+<div class="cta-section" data-aos="fade-up">
   <div class="cta-box">
     <h2>Build Your Smart Industry Solution</h2>
     <p>We design scalable Industrial IoT platforms for monitoring, automation, and predictive insights.</p>
     <a href="../index.html#contact" class="cta-btn">Start Your IoT Project</a>
   </div>
 </div>
-<footer class="main-footer">
+<footer class="main-footer" data-aos="fade-in">
   <div class="footer-container">
 
     <!-- COMPANY + ADDRESSES -->
@@ -146,9 +202,9 @@ background:#0f172a;
   <div class="footer-bottom">
     <p>© 2026 Roboost Solutions. All Rights Reserved.</p>
     <div class="social-links">
-      <a href="#">LinkedIn</a>
-      <a href="#">GitHub</a>
-      <a href="#">YouTube</a>
+      <a href="https://www.linkedin.com/in/govinda-015912258/">LinkedIn</a>
+      <a href="https://github.com/govinda0007">GitHub</a>
+      <a href="https://www.instagram.com/govinda_0007/">YouTube</a>
     </div>
   </div>
 </footer>
@@ -170,6 +226,16 @@ particlesJS("particles-js",{
   }
 });
 </script>
-
+<!-- Animations -->
+ <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+  duration: 900,
+  once: false,
+  mirror: true,
+  offset: 80,
+  easing: "ease-out-cubic"
+});
+</script>
 </body>
 </html>

@@ -24,13 +24,15 @@
 
 <!-- MAIN CSS -->
 <link rel="stylesheet" href="css/style.css">
+<!-- Animations -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 <div id="particles-js"></div>
 
 <header>
-  <div class="hero-box">
+  <div class="hero-box" data-aos="fade-up">
     <img src="assets/logo.png" alt="Roboost Solutions Logo" class="logo">
     <h1>Industrial IoT, AI & Automation Solutions for Smart Industries</h1>
     <p>Roboost Solutions designs intelligent connected systems, embedded electronics, and automation platforms that transform industries through real-time data and smart control.</p>
@@ -41,29 +43,29 @@
   </div>
 </header>
 
-<section class="stats">
+<section class="stats" data-aos="fade-up" >
   <div class="stats-grid">
-    <div><h3 class="count" data-target="25">0</h3><p>Projects Completed</p></div>
-    <div><h3 class="count" data-target="10">0</h3><p>Industries Served</p></div>
-    <div><h3 class="count" data-target="15">0</h3><p>Technologies Used</p></div>
-    <div><h3 class="count" data-target="24">0</h3><p>Support Availability</p></div>
+    <div data-aos="zoom-in" data-aos-delay="100"><h3 class="count" data-target="25">0</h3><p>Projects Completed</p></div>
+    <div data-aos="zoom-in" data-aos-delay="100"><h3 class="count" data-target="10">0</h3><p>Industries Served</p></div>
+    <div data-aos="zoom-in" data-aos-delay="100"><h3 class="count" data-target="15">0</h3><p>Technologies Used</p></div>
+    <div data-aos="zoom-in" data-aos-delay="100"><h3 class="count" data-target="24">0</h3><p>Support Availability</p></div>
   </div>
 </section>
 
-<section id="services">
+<section id="services" >
 <h2>Our Services</h2>
-<div class="services-grid">
+<div class="services-grid" data-aos="fade-up" data-aos-delay="100">
 <div class="service-card"><div class="icon">🌐</div><h3>Industrial IoT Systems</h3><p>Real-time monitoring and connected control devices.</p><a href="html/projects-iot.html" class="service-btn">More</a>
 </div>
-<div class="service-card"><div class="icon">🧠</div><h3>AI & Predictive Analytics</h3><p>Smart algorithms for anomaly detection and performance insights.</p><a href="html/projects-ai.html" class="service-btn">More</a></div>
-<div class="service-card"><div class="icon">⚙️</div><h3>Automation & Embedded Systems</h3><p>Custom embedded firmware and sensor-driven automation.</p><a href="html/projects-embedded.html" class="service-btn">More</a></div>
-<div class="service-card"><div class="icon">🔬</div><h3>Advanced Electronic Solutions</h3><p>Inspection, sensing, and industrial electronic systems.</p><a href="html/projects-electronics.html" class="service-btn">More</a></div>
-<div class="service-card"><div class="icon">☁️</div><h3>Web & Cloud Platforms</h3><p>IoT dashboards, APIs, and secure cloud integration.</p><a href="html/projects-cloud.html" class="service-btn">More</a></div>
-<div class="service-card"><div class="icon">🛠️</div><h3>Custom Engineering Projects</h3><p>Tailor-made IoT and AI solutions for specialized needs.</p><a href="html/projects-custom.html" class="service-btn">More</a></div>
+<div class="service-card" data-aos="fade-up" data-aos-delay="100"><div class="icon">🧠</div><h3>AI & Predictive Analytics</h3><p>Smart algorithms for anomaly detection and performance insights.</p><a href="html/projects-ai.html" class="service-btn">More</a></div>
+<div class="service-card" data-aos="fade-up" data-aos-delay="100"><div class="icon">⚙️</div><h3>Automation & Embedded Systems</h3><p>Custom embedded firmware and sensor-driven automation.</p><a href="html/projects-embedded.html" class="service-btn">More</a></div>
+<div class="service-card" data-aos="fade-up" data-aos-delay="100"><div class="icon">🔬</div><h3>Advanced Electronic Solutions</h3><p>Inspection, sensing, and industrial electronic systems.</p><a href="html/projects-electronics.html" class="service-btn">More</a></div>
+<div class="service-card" data-aos="fade-up" data-aos-delay="100"><div class="icon">☁️</div><h3>Web & Cloud Platforms</h3><p>IoT dashboards, APIs, and secure cloud integration.</p><a href="html/projects-cloud.html" class="service-btn">More</a></div>
+<div class="service-card" data-aos="fade-up" data-aos-delay="100"><div class="icon">🛠️</div><h3>Custom Engineering Projects</h3><p>Tailor-made IoT and AI solutions for specialized needs.</p><a href="html/projects-custom.html" class="service-btn">More</a></div>
 </div>
 </section>
 
-<section id="careers">
+<section id="careers" data-aos="fade-right">
 <h2>Careers at Roboost</h2>
 <p style="text-align:center;max-width:800px;margin:auto">We welcome passionate engineers and developers in IoT, AI, embedded systems, and automation technologies.</p>
 <div style="text-align:center;margin-top:25px;">
@@ -71,11 +73,11 @@
 </div>
 </section>
 
-<section id="contact">
+<section id="contact" data-aos="fade-up">
 <h2>Contact Us</h2>
 <div class="contact-wrapper">
   <div class="contact-card">
-    <form action="https://formsubmit.co/goko062003@gmail.com" method="POST">
+    <form id="contactForm" action="https://formsubmit.co/goko062003@gmail.com" method="POST">
       <input type="hidden" name="_captcha" value="false">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
@@ -86,7 +88,7 @@
 </div>
 </section>
 
- <footer class="main-footer">
+ <footer class="main-footer" data-aos="fade-in">
   <div class="footer-container">
 
     <!-- COMPANY + ADDRESSES -->
@@ -164,9 +166,9 @@
   <div class="footer-bottom">
     <p>© 2026 Roboost Solutions. All Rights Reserved.</p>
     <div class="social-links">
-      <a href="#">LinkedIn</a>
-      <a href="#">GitHub</a>
-      <a href="#">YouTube</a>
+      <a href="https://www.linkedin.com/in/govinda-015912258/">LinkedIn</a>
+      <a href="https://github.com/govinda0007">GitHub</a>
+      <a href="https://www.instagram.com/govinda_0007/">Instrgram</a>
     </div>
   </div>
 </footer>
@@ -175,5 +177,33 @@
 
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="js/main.js"></script>
+<script>
+function redirectAfterSubmit(formId){
+  const form = document.getElementById(formId);
+  if(!form) return;
+
+  form.addEventListener("submit", function(){
+    setTimeout(function(){
+      window.location.href = "html/success.html";
+    }, 800); // small delay so form can send
+  });
+}
+
+redirectAfterSubmit("contactForm");
+redirectAfterSubmit("careerForm");
+</script>
+<!-- Animations -->
+ <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+  duration: 900,
+  once: false,
+  offset: 80,
+  easing: "ease-out-cubic"
+});
+</script>
+
+
+
 </body>
 </html>

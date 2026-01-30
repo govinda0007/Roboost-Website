@@ -8,25 +8,26 @@
 <link rel="stylesheet" href="../css/projects.css">
 <link rel="icon" href="../assets/favicon.png">
 <link rel="shortcut icon" href="../assets/favicon.png">
-
+<!-- Animations -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
 <div id="particles-js"></div>
 <a href="../index.html" class="top-back">← Back to Home</a>
 
-<div class="projects-header">
+<div class="projects-header" data-aos="fade-up">
   <h1>Advanced Electronic Solutions</h1>
   <p>Precision electronics for sensing, testing, and industrial control.</p>
 </div>
 
-<div class="project-grid">
+<div class="project-grid" data-aos="fade-up">
   <div class="project-item"><h3>Industrial Data Acquisition System</h3><span>DAQ • Signal Processing</span></div>
   <div class="project-item"><h3>Custom Sensor Interface Boards</h3><span>PCB Design • Calibration</span></div>
   <div class="project-item"><h3>Automated Inspection Electronics</h3><span>Embedded Control</span></div>
 </div>
 
-<div class="media-section">
+<div class="media-section" data-aos="fade-up">
   <h2>Project Gallery</h2>
   <div class="media-grid">
     <img src="../assets/el1.jpg">
@@ -34,7 +35,7 @@
   </div>
 </div>
 
-<div class="media-section">
+<div class="media-section" data-aos="fade-up">
   <h2>Project Videos</h2>
   <div class="video-grid">
     <video controls src="../assets/el-video1.mp4"></video>
@@ -42,7 +43,7 @@
   </div>
 </div>
 
-<div class="cta-section">
+<div class="cta-section" data-aos="fade-up">
   <div class="cta-box">
     <h2>Design Advanced Electronics</h2>
     <p>From concept to PCB production, we deliver reliable electronic systems.</p>
@@ -51,7 +52,7 @@
 </div>
 
 <!-- SAME FOOTER AS IOT PAGE -->
- <footer class="main-footer">
+ <footer class="main-footer" data-aos="fade-in">
   <div class="footer-container">
 
     <!-- COMPANY + ADDRESSES -->
@@ -129,9 +130,9 @@
   <div class="footer-bottom">
     <p>© 2026 Roboost Solutions. All Rights Reserved.</p>
     <div class="social-links">
-      <a href="#">LinkedIn</a>
-      <a href="#">GitHub</a>
-      <a href="#">YouTube</a>
+      <a href="https://www.linkedin.com/in/govinda-015912258/">LinkedIn</a>
+      <a href="https://github.com/govinda0007">GitHub</a>
+      <a href="https://www.instagram.com/govinda_0007/">YouTube</a>
     </div>
   </div>
 </footer>
@@ -140,6 +141,15 @@
 <script>
 particlesJS("particles-js",{particles:{number:{value:60},size:{value:3},move:{speed:1},line_linked:{enable:true,opacity:0.2}},interactivity:{events:{onhover:{enable:true,mode:"repulse"}}}});
 </script>
-
+<!-- Animations -->
+ <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+  duration: 900,
+  once: false,
+  offset: 80,
+  easing: "ease-out-cubic"
+});
+</script>
 </body>
 </html>
