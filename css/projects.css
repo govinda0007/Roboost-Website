@@ -270,14 +270,7 @@ transition:.3s;
 color:#38bdf8;
 }
 
-.footer-bottom{
-border-top:1px solid rgba(255,255,255,0.08);
-padding:20px;
-text-align:center;
-display:flex;
-flex-direction:column;
-gap:10px;
-}
+
 
 .social-links a{
 margin:0 10px;
@@ -372,23 +365,13 @@ flex-direction:column;
 gap:10px;
 }
 
-.social-links a{
-margin:0 10px;
-color:#38bdf8;
-text-decoration:none;
-font-size:14px;
-transition:.3s;
-}
 
-.social-links a:hover{
-color:#00c6ff;
-}
+
+
 
 /* Mobile */
 @media(max-width:768px){
-.footer-bottom{
-font-size:13px;
-}
+
 .footer-brand{
 justify-content:center;
 }

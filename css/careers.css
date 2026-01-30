@@ -158,26 +158,21 @@ margin-bottom:18px;
 .footer-bottom{
 border-top:1px solid rgba(255,255,255,0.08);
 padding:20px;
+text-align:center;
 display:flex;
-justify-content:space-between;
-align-items:center;
-max-width:1300px;
-margin:auto;
-font-size:13px;
-color:#64748b;
+flex-direction:column;
+gap:10px;
 }
-
-/* Social links */
 .social-links a{
-margin-left:18px;
+margin:0 10px;
+color:#38bdf8;
 text-decoration:none;
-color:#94a3b8;
 font-size:14px;
 transition:.3s;
 }
 
 .social-links a:hover{
-color:#38bdf8;
+color:#00c6ff;
 }
 
 /* Subtle glow line on top */
@@ -188,6 +183,25 @@ height:1px;
 background:linear-gradient(to right, transparent, #38bdf8, transparent);
 margin-bottom:50px;
 opacity:.3;
+}
+/* ===== TOP BACK BUTTON ===== */
+.top-back{
+position:fixed;
+top:20px;
+left:20px;
+padding:10px 22px;
+background:linear-gradient(45deg,#00c6ff,#0072ff);
+border-radius:30px;
+color:white;
+font-weight:600;
+text-decoration:none;
+z-index:1000;
+box-shadow:0 0 12px rgba(0,114,255,.5);
+transition:.3s;
+}
+.top-back:hover{
+transform:translateY(-3px);
+box-shadow:0 0 18px rgba(0,114,255,.8);
 }
 
 

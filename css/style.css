@@ -175,7 +175,25 @@ background:linear-gradient(to right, transparent, #38bdf8, transparent);
 margin-bottom:50px;
 opacity:.3;
 }
+.footer-bottom{
+border-top:1px solid rgba(255,255,255,0.08);
+padding:20px;
+text-align:center;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+.social-links a{
+margin:0 10px;
+color:#38bdf8;
+text-decoration:none;
+font-size:14px;
+transition:.3s;
+}
 
+.social-links a:hover{
+color:#00c6ff;
+}
 
 
 /* footer{background:#020617;text-align:center;padding:35px 20px;color:#94a3b8} */
