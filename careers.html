@@ -11,6 +11,7 @@
 
 <link rel="icon" href="assets/favicon.png">
 <link rel="shortcut icon" href="assets/favicon.png">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -19,13 +20,13 @@
 <div id="particles-js"></div>
 <a href="index.html" class="top-back">← Back to Home</a>
 
-<div class="header">
+<div class="header" data-aos="fade-up">
   <h1>Join Roboost Solutions</h1>
   <p>Work on real-world innovation in IoT, AI, and Embedded Systems</p>
 </div>
 
 <div class="form-container">
-<form action="https://formsubmit.co/goko062003@gmail.com" method="POST" enctype="multipart/form-data">
+<form id="contactForm" action="https://formsubmit.co/goko062003@gmail.com" method="POST" enctype="multipart/form-data" data-aos="fade-up">
 
 
 
@@ -68,7 +69,7 @@
 </form>
 </div>
 
-<footer class="main-footer">
+<footer class="main-footer" data-aos="fade-in">
   <div class="footer-container">
 
     <!-- COMPANY + ADDRESSES -->
@@ -179,6 +180,16 @@ function redirectAfterSubmit(formId){
 
 redirectAfterSubmit("contactForm");
 redirectAfterSubmit("careerForm");
+</script>
+<!-- Animations -->
+ <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+  duration: 900,
+  once: false,
+  offset: 80,
+  easing: "ease-out-cubic"
+});
 </script>
 
 
