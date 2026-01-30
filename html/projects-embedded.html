@@ -6,25 +6,26 @@
 <link rel="stylesheet" href="../css/projects.css">
 <link rel="icon" href="../assets/favicon.png">
 <link rel="shortcut icon" href="../assets/favicon.png">
-
+<!-- Animations -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
 <div id="particles-js"></div>
 <a href="../index.html" class="top-back">← Back to Home</a>
 
-<div class="projects-header">
+<div class="projects-header" data-aos="fade-up">
   <h1>Embedded & Automation Projects</h1>
   <p>Smart embedded systems powering industrial automation.</p>
 </div>
 
-<div class="project-grid">
+<div class="project-grid" data-aos="fade-up">
   <div class="project-item"><h3>Custom PLC Controller</h3><span>Industrial Control</span></div>
   <div class="project-item"><h3>Robotic Arm System</h3><span>Motor Control</span></div>
   <div class="project-item"><h3>Sensor Data Hub</h3><span>Embedded Linux</span></div>
 </div>
 
-<div class="media-section">
+<div class="media-section" data-aos="fade-up">
   <h2>Project Gallery</h2>
   <div class="media-grid">
     <img src="../assets/emb1.jpg">
@@ -32,7 +33,7 @@
   </div>
 </div>
 
-<div class="media-section">
+<div class="media-section" data-aos="fade-up">
   <h2>Project Videos</h2>
   <div class="video-grid">
     <video controls src="../assets/emb-video1.mp4"></video>
@@ -40,7 +41,7 @@
   </div>
 </div>
 
-<div class="cta-section">
+<div class="cta-section" data-aos="fade-right">
   <div class="cta-box">
     <h2>Build Intelligent Automation</h2>
     <p>We create reliable embedded platforms for industrial control.</p>
@@ -49,7 +50,7 @@
 </div>
 
 <!-- SAME FOOTER -->
-<footer class="main-footer">
+<footer class="main-footer" data-aos="fade-in">
   <div class="footer-container">
 
     <!-- COMPANY + ADDRESSES -->
@@ -138,6 +139,15 @@
 <script>
 particlesJS("particles-js",{particles:{number:{value:60},size:{value:3},move:{speed:1},line_linked:{enable:true,opacity:0.2}},interactivity:{events:{onhover:{enable:true,mode:"repulse"}}}});
 </script>
-
+<!-- Animations -->
+ <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+  duration: 900,
+  once: false,
+  offset: 80,
+  easing: "ease-out-cubic"
+});
+</script>
 </body>
 </html>

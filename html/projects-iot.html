@@ -9,7 +9,8 @@
 <link rel="stylesheet" href="../css/projects.css">
 <link rel="icon" href="../assets/favicon.png">
 <link rel="shortcut icon" href="../assets/favicon.png">
-
+<!-- Animations -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 <!-- PARTICLES BACKGROUND STYLE -->
 <style>
@@ -30,20 +31,20 @@ background:#0f172a;
 
 <a href="../index.html" class="top-back">← Back to Home</a>
 
-<div class="projects-header">
+<div class="projects-header" data-aos="fade-up">
   <h1>Industrial IoT Projects</h1>
   <p>Smart connected solutions for industrial monitoring and automation.</p>
 </div>
 
 <!-- PROJECTS GRID -->
-<div class="project-grid">
+<div class="project-grid" data-aos="fade-up">
   <div class="project-item"><h3>Smart Factory Monitoring</h3><span>ESP32 • MQTT • Cloud Dashboard</span></div>
   <div class="project-item"><h3>Energy Usage Analytics</h3><span>IoT Sensors • Data Visualization</span></div>
   <div class="project-item"><h3>Remote Equipment Health</h3><span>Predictive Maintenance • Edge AI</span></div>
 </div>
 
 <!-- IMAGE SECTION -->
-<div class="media-section">
+<div class="media-section" data-aos="fade-up">
   <h2>Project Gallery</h2>
   <div class="media-grid">
     <img src="../assets/iot1.jpg" alt="">
@@ -52,7 +53,7 @@ background:#0f172a;
 </div>
 
 <!-- VIDEO SECTION -->
-<div class="media-section">
+<div class="media-section" data-aos="fade-up">
   <h2>Project Videos</h2>
   <div class="video-grid">
     <video controls src="../assets/iot-video1.mp4"></video>
@@ -61,14 +62,14 @@ background:#0f172a;
 </div>
 
 <!-- CLEAN CTA SECTION (No shapes) -->
-<div class="cta-section">
+<div class="cta-section" data-aos="fade-right">
   <div class="cta-box">
     <h2>Build Your Smart Industry Solution</h2>
     <p>We design scalable Industrial IoT platforms for monitoring, automation, and predictive insights.</p>
     <a href="../index.html#contact" class="cta-btn">Start Your IoT Project</a>
   </div>
 </div>
-<footer class="main-footer">
+<footer class="main-footer" data-aos="fade-in">
   <div class="footer-container">
 
     <!-- COMPANY + ADDRESSES -->
@@ -170,6 +171,15 @@ particlesJS("particles-js",{
   }
 });
 </script>
-
+<!-- Animations -->
+ <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+  duration: 900,
+  once: false,
+  offset: 80,
+  easing: "ease-out-cubic"
+});
+</script>
 </body>
 </html>

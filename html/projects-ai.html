@@ -8,25 +8,26 @@
 <link rel="stylesheet" href="../css/projects.css">
 <link rel="icon" href="../assets/favicon.png">
 <link rel="shortcut icon" href="../assets/favicon.png">
-
+<!-- Animations -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
 <div id="particles-js"></div>
 <a href="../index.html" class="top-back">← Back to Home</a>
 
-<div class="projects-header">
+<div class="projects-header" data-aos="fade-up">
   <h1>AI & Predictive Analytics Projects</h1>
   <p>Turning industrial data into smart decisions using AI.</p>
 </div>
 
-<div class="project-grid">
+<div class="project-grid" data-aos="fade-up">
   <div class="project-item"><h3>Machine Failure Prediction</h3><span>ML • Sensor Data</span></div>
   <div class="project-item"><h3>Quality Inspection AI</h3><span>Computer Vision</span></div>
   <div class="project-item"><h3>Production Forecasting</h3><span>Time-Series AI</span></div>
 </div>
 
-<div class="media-section">
+<div class="media-section" data-aos="fade-up">
   <h2>Project Gallery</h2>
   <div class="media-grid">
     <img src="../assets/ai1.jpg">
@@ -34,7 +35,7 @@
   </div>
 </div>
 
-<div class="media-section">
+<div class="media-section" data-aos="fade-up">
   <h2>Project Videos</h2>
   <div class="video-grid">
     <video controls src="../assets/ai-video1.mp4"></video>
@@ -42,7 +43,7 @@
   </div>
 </div>
 
-<div class="cta-section">
+<div class="cta-section" data-aos="fade-right">
   <div class="cta-box">
     <h2>Integrate AI Into Your Operations</h2>
     <p>We develop predictive systems that improve reliability and efficiency.</p>
@@ -51,7 +52,7 @@
 </div>
 
 <!-- SAME FOOTER AS IOT PAGE -->
- <footer class="main-footer">
+ <footer class="main-footer" data-aos="fade-in">
   <div class="footer-container">
 
     <!-- COMPANY + ADDRESSES -->
@@ -139,6 +140,16 @@
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script>
 particlesJS("particles-js",{particles:{number:{value:60},size:{value:3},move:{speed:1},line_linked:{enable:true,opacity:0.2}},interactivity:{events:{onhover:{enable:true,mode:"repulse"}}}});
+</script>
+<!-- Animations -->
+ <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+  duration: 900,
+  once: false,
+  offset: 80,
+  easing: "ease-out-cubic"
+});
 </script>
 
 </body>
