@@ -26,8 +26,8 @@
 
 <div class="form-container">
 <form action="https://formsubmit.co/goko062003@gmail.com" method="POST" enctype="multipart/form-data">
-<input type="hidden" name="_next" value="https://govinda0007.github.io/Roboost-Website/careers-success.html
-">
+
+
 
 <input type="hidden" name="_captcha" value="false">
 <input type="hidden" name="_subject" value="New Career Application - Roboost">
@@ -165,6 +165,22 @@ particlesJS("particles-js",{
   interactivity:{events:{onhover:{enable:true,mode:"repulse"}}}
 });
 </script>
+<script>
+function redirectAfterSubmit(formId){
+  const form = document.getElementById(formId);
+  if(!form) return;
+
+  form.addEventListener("submit", function(){
+    setTimeout(function(){
+      window.location.href = "success.html";
+    }, 800); // small delay so form can send
+  });
+}
+
+redirectAfterSubmit("contactForm");
+redirectAfterSubmit("careerForm");
+</script>
+
 
 </body>
 </html>

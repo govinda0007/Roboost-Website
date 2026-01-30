@@ -175,5 +175,21 @@
 
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="js/main.js"></script>
+<script>
+function redirectAfterSubmit(formId){
+  const form = document.getElementById(formId);
+  if(!form) return;
+
+  form.addEventListener("submit", function(){
+    setTimeout(function(){
+      window.location.href = "success.html";
+    }, 800); // small delay so form can send
+  });
+}
+
+redirectAfterSubmit("contactForm");
+redirectAfterSubmit("careerForm");
+</script>
+
 </body>
 </html>
