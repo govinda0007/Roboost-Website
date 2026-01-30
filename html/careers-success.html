@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Application Submitted | Roboost Solutions</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+.success-wrapper{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:40px 20px;
+background:linear-gradient(135deg,#0f172a,#020617);
+}
+
+.success-card{
+max-width:600px;
+width:100%;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(14px);
+border-radius:20px;
+padding:50px 40px;
+text-align:center;
+box-shadow:0 0 40px rgba(0,0,0,0.5);
+animation:fadeUp 1s ease;
+}
+
+.success-icon{
+font-size:70px;
+margin-bottom:20px;
+animation:bounce 1.5s infinite alternate;
+}
+
+.success-card h1{
+color:#38bdf8;
+margin-bottom:15px;
+}
+
+.success-card p{
+color:#cbd5e1;
+margin-bottom:30px;
+line-height:1.6;
+}
+
+.success-actions{
+display:flex;
+gap:15px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.success-btn{
+padding:12px 28px;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.btn-home{
+background:linear-gradient(45deg,#00c6ff,#0072ff);
+color:white;
+box-shadow:0 0 15px rgba(0,114,255,.5);
+}
+
+.btn-home:hover{
+transform:translateY(-4px);
+}
+
+.btn-careers{
+border:1px solid #38bdf8;
+color:#38bdf8;
+}
+
+.btn-careers:hover{
+background:#38bdf8;
+color:#0f172a;
+}
+
+@keyframes fadeUp{
+from{opacity:0;transform:translateY(40px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+@keyframes bounce{
+from{transform:translateY(0);}
+to{transform:translateY(-10px);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="success-wrapper">
+  <div class="success-card">
+    <div class="success-icon">🎉</div>
+    <h1>Application Submitted Successfully!</h1>
+    <p>
+      Thank you for applying to <strong>Roboost Solutions</strong>.<br>
+      Our team will review your profile and contact you soon.
+    </p>
+
+    <div class="success-actions">
+      <a href="index.html" class="success-btn btn-home">Back to Home</a>
+      <a href="careers.html" class="success-btn btn-careers">Apply Another Role</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
