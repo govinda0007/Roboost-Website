@@ -1,3 +1,7 @@
+if ("scrollRestoration" in history) {
+  history.scrollRestoration = "auto";
+}
+
 particlesJS("particles-js",{
   particles:{number:{value:60},size:{value:3},move:{speed:1},line_linked:{enable:true,opacity:0.2}},
   interactivity:{events:{onhover:{enable:true,mode:"repulse"}}}
