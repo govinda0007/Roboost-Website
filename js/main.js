@@ -32,3 +32,23 @@ counters.forEach(counter=>{
   };
   update();
 });
+// ===== MANUAL SCROLL RESTORE (GitHub Pages safe) =====
+
+// Save scroll position before leaving page
+window.addEventListener("beforeunload", () => {
+  sessionStorage.setItem(
+    "scrollPosition-" + location.pathname,
+    window.scrollY
+  );
+});
+
+// Restore scroll position when page loads
+window.addEventListener("load", () => {
+  const scrollPos = sessionStorage.getItem(
+    "scrollPosition-" + location.pathname
+  );
+
+  if (scrollPos !== null) {
+    window.scrollTo(0, parseInt(scrollPos, 10));
+  }
+});
